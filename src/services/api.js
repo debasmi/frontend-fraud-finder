@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://fraud-finder-backend-3.onrender.com/api';
+const API_BASE_URL = 'https://scorbutic-nonreasoning-garth.ngrok-free.dev';
 
 
 class ApiService {
