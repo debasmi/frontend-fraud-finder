@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://fraud-finder-backend-ls3t.onrender.com/api';
+const API_BASE_URL = 'https://fraud-finder-backend-3.onrender.com/api';
 
 
 class ApiService {
