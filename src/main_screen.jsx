@@ -59,7 +59,7 @@ const MainScreen = () => {
         };
         setLoading(true);
         try {
-            const response = await fetch("/api/analyze", {
+            const response = await fetch("https://fraud-finder-backend-3.onrender.com/api/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -88,7 +88,7 @@ const MainScreen = () => {
                 url: '',
                 source: 'User',
             };
-            const response = await fetch("/api/ml_recommend", {
+            const response = await fetch("https://fraud-finder-backend-3.onrender.com/api/ml_recommend", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(job)
