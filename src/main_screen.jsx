@@ -59,7 +59,7 @@ const MainScreen = () => {
         };
         setLoading(true);
         try {
-            const response = await fetch("https://fraud-finder-backend-3.onrender.com/api/analyze", {
+            const response = await fetch("https://scorbutic-nonreasoning-garth.ngrok-free.dev/api/ml_recommend", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
