@@ -35,7 +35,7 @@ const ProfilePage = ({ userName, onBack }) => {
     return (
         <div style={{ minHeight: "100vh", background: "#f7f9fb", display: "flex", flexDirection: "column" }}>
             <header style={{ background: "#DDDCDC", color: "#000000ff", padding: "1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <img src="/assetslogo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                <img src="/assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                 <h2 style={{ fontFamily: 'JomolhariReg' }}>User Profile</h2>
             </header>
 
@@ -88,10 +88,10 @@ const ProfilePage = ({ userName, onBack }) => {
 // Sidebar Component
 function Sidebar({ userName, onLogout, setSelected, selected }) {
     const options = [
-        { key: "history", label: "Analysis History", icon: "/assetshistory.png" },
-        { key: "downloads", label: "Downloads", icon: "/assetsdownloads.png" },
-        { key: "edit", label: "Edit Profile", icon: "/assetsedit_profile.png" },
-        { key: "logout", label: "Logout", icon: "/assetslogout.png" }
+        { key: "history", label: "Analysis History", icon: "/assets/history.png" },
+        { key: "downloads", label: "Downloads", icon: "/assets/downloads.png" },
+        { key: "edit", label: "Edit Profile", icon: "/assets/edit_profile.png" },
+        { key: "logout", label: "Logout", icon: "/assets/logout.png" }
     ];
 
     return (
