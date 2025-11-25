@@ -35,7 +35,7 @@ const ProfilePage = ({ userName, onBack }) => {
     return (
         <div style={{ minHeight: "100vh", background: "#f7f9fb", display: "flex", flexDirection: "column" }}>
             <header style={{ background: "#DDDCDC", color: "#000000ff", padding: "1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <img src="src/assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                <img src="/assetslogo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                 <h2 style={{ fontFamily: 'JomolhariReg' }}>User Profile</h2>
             </header>
 
@@ -52,7 +52,7 @@ const ProfilePage = ({ userName, onBack }) => {
             <footer style={{ background: "#2C3E50", color: "#ffffffff", padding: "2rem 2rem 1rem 2rem" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", maxWidth: 1400, margin: "0 auto", flexWrap: "wrap" }}>
                     <div style={{ flex: "1 1 230px", margin: "0 1rem" }}>
-                        <img src="src/assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                        <img src="/assetslogo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                         <ul style={{ listStyle: "none", padding: 0, color: "#fff" }}>
                             <p style={{ fontFamily: 'JomolhariReg' }}>Our tool analyses job postings and identifies potential red flags. We check for inconsistencies, unrealistic promises, and other indicators of fraud.</p>
                         </ul>
@@ -88,10 +88,10 @@ const ProfilePage = ({ userName, onBack }) => {
 // Sidebar Component
 function Sidebar({ userName, onLogout, setSelected, selected }) {
     const options = [
-        { key: "history", label: "Analysis History", icon: "src/assets/history.png" },
-        { key: "downloads", label: "Downloads", icon: "src/assets/downloads.png" },
-        { key: "edit", label: "Edit Profile", icon: "src/assets/edit_profile.png" },
-        { key: "logout", label: "Logout", icon: "src/assets/logout.png" }
+        { key: "history", label: "Analysis History", icon: "/assetshistory.png" },
+        { key: "downloads", label: "Downloads", icon: "/assetsdownloads.png" },
+        { key: "edit", label: "Edit Profile", icon: "/assetsedit_profile.png" },
+        { key: "logout", label: "Logout", icon: "/assetslogout.png" }
     ];
 
     return (
