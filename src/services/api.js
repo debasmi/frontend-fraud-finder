@@ -2,7 +2,7 @@
 /*const API_BASE_URL = 'https://scorbutic-nonreasoning-garth.ngrok-free.dev/api';*/
 /*const API_BASE_URL = 'https://fraud-finder-backend-3.onrender.com/api'*/;
 
-class ApiService {
+/*class ApiService {
     async request(endpoint, options = {}) {
         const config = {
             headers: {
@@ -15,6 +15,32 @@ class ApiService {
 
         try {
             const response = await fetch(`${API_BASE_URL}${endpoint}`, config);
+            const data = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(data.message || 'Request failed');
+            }
+            
+            return data;
+        } catch (error) {
+            console.error('API Error:', error);
+            throw error;
+        }
+    }*/
+    class ApiService {
+    async request(url, options = {}) {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers,
+            },
+            credentials: 'include',
+            ...options,
+        };
+
+        try {
+            // FIXED: Changed from backticks in wrong place to parentheses
+            const response = await fetch(url, config);
             const data = await response.json();
             
             if (!response.ok) {
