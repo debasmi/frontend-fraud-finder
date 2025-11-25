@@ -52,7 +52,7 @@ const ProfilePage = ({ userName, onBack }) => {
             <footer style={{ background: "#2C3E50", color: "#ffffffff", padding: "2rem 2rem 1rem 2rem" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", maxWidth: 1400, margin: "0 auto", flexWrap: "wrap" }}>
                     <div style={{ flex: "1 1 230px", margin: "0 1rem" }}>
-                        <img src="/assetslogo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                        <img src="/assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                         <ul style={{ listStyle: "none", padding: 0, color: "#fff" }}>
                             <p style={{ fontFamily: 'JomolhariReg' }}>Our tool analyses job postings and identifies potential red flags. We check for inconsistencies, unrealistic promises, and other indicators of fraud.</p>
                         </ul>
