@@ -111,7 +111,7 @@ const MainScreen = () => {
     return (
         <div className="main-screen-container" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
             <header style={{ background: "#DDDCDC", color: "#000000ff", padding: "1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <img src="./assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                <img src="assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                 <h2 style={{ fontFamily: 'JomolhariReg' }}>Spot fake job postings before you apply</h2>
                 <div>
                     {userName ? (
@@ -374,14 +374,14 @@ const MainScreen = () => {
                                                         };
 
                                                         const flagImages = {
-                                                            vague_description: "./assets/vague_jd.png",
-                                                            unrealistic_salary: "./assets/unreal_salary.png",
-                                                            no_company_info: "./assets/no_comp_info.png",
-                                                            requests_personal_details: "./assets/personal_info.png",
-                                                            poor_grammar: "./assets/poor_grammar.png",
-                                                            suspicious_contact: "./assets/sus_contact.png",
-                                                            no_linkedin: "./assets/no_linkedin.png",
-                                                            no_company_website: "./assets/no_website.png"
+                                                            vague_description: "assets/vague_jd.png",
+                                                            unrealistic_salary: "assets/unreal_salary.png",
+                                                            no_company_info: "assets/no_comp_info.png",
+                                                            requests_personal_details: "assets/personal_info.png",
+                                                            poor_grammar: "assets/poor_grammar.png",
+                                                            suspicious_contact: "assets/sus_contact.png",
+                                                            no_linkedin: "assets/no_linkedin.png",
+                                                            no_company_website: "assets/no_website.png"
                                                         };
 
                                                         const flags = result.analysis.red_flags;
@@ -673,7 +673,7 @@ const MainScreen = () => {
             <footer style={{ background: "#2C3E50", color: "#ffffffff", padding: "2rem 2rem 1rem 2rem" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", maxWidth: 1400, margin: "0 auto", flexWrap: "wrap" }}>
                     <div style={{ flex: "1 1 230px", margin: "0 1rem" }}>
-                        <img src="./assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
+                        <img src="assets/logo.png" alt="Fraud Finder Logo" style={{ height: "40px" }} />
                         <ul style={{ listStyle: "none", padding: 0, color: "#fff" }}>
                             <p style={{ fontFamily: 'JomolhariReg' }}>Our tool analyses job postings and identifies potential red flags. We check for inconsistencies, unrealistic promises, and other indicators of fraud.</p>
                         </ul>
