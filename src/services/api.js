@@ -1,6 +1,6 @@
 
 /*const API_BASE_URL = 'https://scorbutic-nonreasoning-garth.ngrok-free.dev/api';*/
-const API_BASE_URL = 'https://fraud-finder-backend-3.onrender.com/api';
+/*const API_BASE_URL = 'https://fraud-finder-backend-3.onrender.com/api'*/;
 
 class ApiService {
     async request(endpoint, options = {}) {
@@ -30,14 +30,14 @@ class ApiService {
 
     // Authentication
     async register(userData) {
-        return this.request('/register', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/register', {
             method: 'POST',
             body: JSON.stringify(userData),
         });
     }
 
     async login(credentials) {
-        return this.request('/login', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/login', {
             method: 'POST',
         body: JSON.stringify({
             email: credentials.email,  // Changed from username to email
@@ -47,7 +47,7 @@ class ApiService {
     }
 
     async editProfile(userData) {
-        return this.request('/edit_profile', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/edit_profile', {
             method: 'PUT',
             body: JSON.stringify(userData),
         });
@@ -55,7 +55,7 @@ class ApiService {
 
     // Job Analysis
     async analyzeJob(jobData) {
-        return this.request('/analyze', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/analyze', {
             method: 'POST',
             body: JSON.stringify(jobData),
         });
@@ -63,7 +63,7 @@ class ApiService {
 
     // Reporting
     async reportScam(scamData) {
-        return this.request('/report_scam', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/report_scam', {
             method: 'POST',
             body: JSON.stringify(scamData),
         });
@@ -71,13 +71,13 @@ class ApiService {
 
     // Statistics
     async getStats() {
-        return this.request('/stats', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/stats', {
             method: 'GET',
         });
     }
 
     async getRecentAlerts() {
-        return this.request('/recent_alerts', {
+        return this.request('https://fraud-finder-backend-3.onrender.com/api/recent_alerts', {
             method: 'GET',
         });
     }
