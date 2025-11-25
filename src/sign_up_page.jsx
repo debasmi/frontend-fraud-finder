@@ -73,7 +73,7 @@ const SignUpPage = ({ onBack, onAuthSuccess }) => {
             <div style={{ position: "absolute", top: 32, left: 32, cursor: "pointer", fontSize: 28 }} onClick={() => onBack()}>
                 <span style={{ fontWeight: 600 }}>&larr;</span>
             </div>
-            <img src="src/assets/logo.png" alt="Fraud Finder Logo" style={{ position: "absolute", top: 32, right: 32, height: "40px" }} />
+            <img src="/assets/logo.png" alt="Fraud Finder Logo" style={{ position: "absolute", top: 32, right: 32, height: "40px" }} />
 
             <form onSubmit={handleSubmit} style={{
                 background: "#f7f7f7",
